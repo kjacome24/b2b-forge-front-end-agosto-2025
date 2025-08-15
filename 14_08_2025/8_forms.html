@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form tag</title>
+</head>
+<body>
+    <!-- Formulario con campos básicos -->
+    <form>
+        <!-- Campo de texto para el primer nombre -->
+        <input type="text" name="first_name" id="first_name">
+
+        <!-- Campo numérico con paso de 0.01 (permite decimales) -->
+        <input type="number" name="age" id="age" step="0.01">
+
+        <!-- Campo de contraseña (oculta el texto ingresado) -->
+        <input type="password" name="pass" id="pass">
+    </form>
+
+    <!-- Formulario con etiqueta asociada a un campo -->
+    <form>
+        <label for="last_name">Primer nombre:</label> <!-- Etiqueta conectada al input mediante 'for' y 'id' -->
+        <input type="text" name="last_name" id="last_name">
+    </form>
+
+    <!-- Formulario con selector de color -->
+    <form>
+        <label for="color">Color:</label>
+        <input type="color" name="color" id="color">
+    </form>
+
+    <!-- Formulario con botones de opción (radio) con unica selección -->
+    <form>
+        <!-- Botón de opción para Negrita -->
+         <span>Font:</span>
+        <input type="radio" name="font" id="bold">
+        <label for="bold">Negrita</label>
+
+        <!-- Botón de opción para Normal -->
+        <input type="radio" name="font" id="normal">
+        <label for="normal">Normal</label>
+    </form>
+
+   <!-- Formulario con botones de opción (radio) con multiple selección -->
+    <form>
+        <!-- Botón de opción para Negrita -->
+         <span>Lenguajes de programación:</span>
+        <input type="radio" name="python" id="python">
+        <label for="python">Python</label>
+
+        <!-- Botón de opción para Normal -->
+        <input type="radio" name="javascript" id="javascript">
+        <label for="javascript">Javascript</label>
+    </form>
+</body>
+
+</html>
