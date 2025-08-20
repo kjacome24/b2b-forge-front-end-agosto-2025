@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1 {
+            color: red;
+        }
+        .purple{
+            color: purple;
+            text-decoration: line-through;
+        }
+        #pink {
+            color: pink;
+        }
+        .quote p{
+            background-color: red;
+        }
+        .quote2 > p {
+            background-color: aqua;
+        }
+        .quote3 div p.highlight{
+            color: blueviolet;
+        }
+        button[type="submit"]{
+            background-color: palegreen;
+        }
+    </style>
+</head>
+<body>
+    <h1>THis is a practice for selectors</h1>
+    <h1 class="purple">THis is a practice for selectors</h1>
+    <h1 id="pink" class="purple">THis is a practice for selectors</h1>
+    <h1 id="pink" class="purple">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, vitae.</h1>
+    <!--Advanced selectors-->
+    <div class="quote">
+        <p>
+            THis is a div with advanced selectors
+        </p>
+        <p>
+            THis is a div with advanced selectors
+        </p>
+        <p>
+            THis is a div with advanced selectors
+        </p>
+        <span>THis is a span</span>
+    </div>
+
+    <!--Direct descendent sleector-->
+    <div class="quote2">
+        <p>This is another test for descendetn selector</p>
+        <div>
+            <p>This is the paragraph inside</p>
+        </div>
+    </div>
+    <!--Combined selector-->
+    <div class="quote3">
+        <span> This is a test</span>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non magni dicta sapiente aliquid esse blanditiis hic animi officia nulla repudiandae?</p>
+        <div>
+            <p>This is a p tag inside a div</p>
+            <p class="highlight">This is another p tag with a class</p>
+        </div>
+    </div>
+    <button>Enviar</button>
+    <button type="submit">salir</button>
+</body>
+</html>

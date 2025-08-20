@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .quote1 p{
+            color: red;
+        }
+        .quote2 > p{
+            color: purple;
+        }
+        div div p.highlight {
+            background-color: yellow;
+        }
+        button[type="submit"]{
+            background-color: aqua;
+        }
+    </style>
+</head>
+<body>
+    <!--Descendent selector-->
+    <div class="quote1">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex fugiat sed a.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam cumque sed deleniti error distinctio corporis cupiditate enim vero inventore sit.</p>
+        <div>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Modi, recusandae praesentium inventore, perspiciatis dicta alias cum reiciendis numquam commodi error accusamus debitis magnam quaerat voluptatum quisquam sint similique maxime. Quod.</p>
+        </div>
+    </div>
+    <!--Direct descendent selector-->
+    <div class="quote2">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex fugiat sed a.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam cumque sed deleniti error distinctio corporis cupiditate enim vero inventore sit.</p>
+        <div>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Modi, recusandae praesentium inventore, perspiciatis dicta alias cum reiciendis numquam commodi error accusamus debitis magnam quaerat voluptatum quisquam sint similique maxime. Quod.</p>
+        </div>
+    </div>
+    <!--Combined selector-->
+
+    <div >
+        <span>This is a test for combined selectors</span>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Itaque minus iure exercitationem eius cum obcaecati at deserunt ad quod! Est, architecto quaerat asperiores neque delectus sunt sed dicta reprehenderit explicabo?</p>
+        <div>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Commodi, dignissimos!</p>
+            <p class="highlight">This is the highlighted one</p>
+        </div>
+            <p class="highlight">This is the highlighted one</p>
+    </div>
+
+
+    <!--Attribute selectors-->
+    <div>
+        <button>Enviar</button>
+        <button type="submit">Canclear</button>
+    </div>
+</body>
+</html>
