@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Advanced Selectors Practice</title>
+  <style>
+    /* Existing rules (no editar) */
+    /* Selector descendente */
+    .quote p{
+      color: red;
+      font-family:'Courier New', Courier, monospace
+    }
+
+    /* Selector descendente directo */
+    .quote2 > p{
+      color: purple;
+    }
+
+    /* Selector combinado */
+    .quote3 div p.highlight{
+      color: aqua;
+    }
+
+    /* Selector por atributo */
+    button[type="submit"]{
+      color: red;
+    }
+
+    /* --------------------------------- */
+    /* TODO: write your selectors here   */
+
+    .quote div > p{
+        color: orange;
+    }
+
+    .quote > p {
+        color: green;
+    }
+
+    .quote2 > div > p{
+        color: blue;
+    }
+
+    .quote3 > div > p.highlight{
+      color: aqua;
+    }
+
+    .quote3 p:not(.highlight) {
+        color: grey;
+    }
+
+    .quote> div > p {
+        text-decoration: underline;
+    }
+
+    .quote p, .quote2 > p {
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+    
+    .quote4 >button[type='submit'] {
+        background-color: black;
+        color: white;
+    }
+
+    button[type] {
+        letter-spacing: 0.06em;
+    }
+
+    .quote3 > p {
+      color: brown !important;
+    }
+
+    /* --------------------------------- */
+
+  </style>
+</head>
+<body>
+  <!------------Selector descendente--------------->
+  <div class="quote">
+    <span>This is the test</span>
+    <p>"CSS es como el ajedrez. Aprendes los conceptos básicos en un día y pasas toda la vida intentando dominarlo."</p>
+    <div>
+      <p>dddddddd</p>
+    </div>
+  </div>
+  <div>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates ipsa non nemo...</p>
+  </div>
+
+  <!------------Selector descendente directo--------------->
+  <div class="quote2">
+    <span>This is the test</span>
+    <p>"CSS es como el ajedrez. Aprendes los conceptos básicos en un día y pasas toda la vida intentando dominarlo."</p>
+    <div>
+      <p>dddddddd</p>
+    </div>
+  </div>
+
+  <!------------Selector combinado--------------->
+  <div class="quote3">
+    <span>This is the test</span>
+    <p>"CSS es como el ajedrez. Aprendes los conceptos básicos en un día y pasas toda la vida intentando dominarlo."</p>
+    <div>
+      <p>dddddddd</p>
+      <p class="highlight">dddddddddd</p>
+    </div>
+  </div>
+
+  <!------------Selector atributo--------------->
+  <div class="quote4">
+    <button>hola</button>
+    <button type="submit">hola 2</button>
+  </div>
+</body>
+<!--
+1. Override por especificidad:
+   En .quote, deja rojo el <p> superior (directo de .quote) 
+   pero cambia a naranja el <p> anidado dentro del <div>.
+
+2. Direct child vs. descendant:
+   En .quote, aplica verde solo a los <p> que sean hijos directos de .quote 
+   (sin afectar el <p> dentro del <div>).
+
+3. Combinación multinivel:
+   En .quote2, estiliza de azul únicamente los <p> que estén dentro del <div> 
+   hijo directo de .quote2 (no el <p> directo de .quote2).
+
+4. Refinar selector combinado existente:
+   Cambia la tipografía de solo .quote3 > div > p.highlight a una monoespaciada 
+   (sin tocar el otro <p> del mismo <div> ni el <p> de arriba en .quote3).
+
+5. Prioridad por orden:
+   Haz que todos los <p> dentro de .quote3 queden en gris, 
+   pero que el .highlight del <div> se siga viendo con su color especial actual 
+   (respeta el color aqua del selector existente).
+
+6. Aislar descendientes profundos:
+   En la primera sección .quote, aplica subrayado solo al <p> que está dentro del <div> 
+   (no al <p> directo de .quote).
+
+7. Agrupación de selectores (misma regla, varios targets):
+   Asigna la misma font-family a:
+   - Todos los <p> de .quote
+   - Y al <p> hijo directo de .quote2
+   (Una sola regla con selector agrupado).
+
+8. Atributos existentes:
+   En .quote4, dale fondo negro y texto blanco solo al botón con type="submit" 
+   manteniendo el botón sin type sin cambios.
+
+9. Atributos — presencia vs. igualdad:
+   Crea una regla que afecte a cualquier botón que tenga un atributo type 
+   (independiente del valor) y cambia su letter-spacing.
+   Tip: no edites el HTML: solo el botón submit tiene type, el otro no.
+
+10. Cadena más específica (ganar a reglas previas):
+    Sin borrar las reglas existentes, consigue que el <p> directo de .quote3 
+    (el que está justo bajo el <span>) tenga color marrón, 
+    aunque agregues otra regla menos específica que pinte p de .quote3 de otro color.
+-->
+</html>

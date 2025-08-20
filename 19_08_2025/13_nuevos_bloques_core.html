@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Posición de práctica</title>
+    <style>
+      .container {
+        width: 950px;
+        background-color: #eaeaea;
+        margin: 0 auto;
+        padding: 10px; /*1. Add border within the grey container*/
+      }
+
+      .top-nav {
+        height: 150px;
+        background-color: #ffcc00;
+        margin-bottom: 10px;
+      }
+
+      .side-nav {
+        height: 380px;
+        width: 225px;
+        background-color: #66ccff;
+        margin: 10px;
+        display: inline-block; /* 3. make the main and the side-nav be inline-block*/
+      }
+
+      .main {
+        height: 400px;
+        width: 700px;
+        background-color: deeppink;
+        display: inline-block;
+        vertical-align: top; /* 3. make the main and the side-nav be inline-block*/
+      }
+
+      .sub-content {
+        height: 200px;
+        width: 210px;
+        background-color: mediumblue; 
+        display: inline-block; /* 2. FOrce the containers that where in block to be inline*/
+        margin: 10px; /* adding margin to make the squeares be distribuited within the pink container*/
+      }
+
+      #advertisement {
+        height: 120px;
+        width: 660px;
+        background-color: #33cc33;
+        margin: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="top-nav"></div>
+      <div class="main">
+        <div class="sub-content"></div>
+        <div class="sub-content"></div>
+        <div class="sub-content"></div>
+        <div id="advertisement"></div>
+      </div>
+      <div class="side-nav"></div>
+    </div>
+  </body>
+</html>
