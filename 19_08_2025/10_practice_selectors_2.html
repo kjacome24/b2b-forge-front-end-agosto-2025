@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Advanced Selectors Practice</title>
+  <style>
+    /* ----------------- Reglas base (no editar) ----------------- */
+
+    /* Selector descendente → todos los <p> dentro de .quote */
+    .quote p {
+      color: red;
+      font-family:'Courier New', Courier, monospace;
+    }
+
+    /* Selector descendente directo → solo el <p> que es hijo directo de .quote2 */
+    .quote2 > p {
+      color: purple;
+    }
+
+    /* Selector combinado → solo el <p> con clase .highlight dentro de un div dentro de .quote3 */
+    .quote3 div p.highlight {
+      color: aqua;
+    }
+
+    /* Selector por atributo → botones con type="submit" */
+    button[type="submit"] {
+      color: red;
+    }
+
+    /* ----------------- ✨ TU TRABAJO AQUÍ ✨ ----------------- */
+    /* Escribe debajo los selectores para cumplir las instrucciones */
+
+
+
+  </style>
+</head>
+<body>
+  <!------------ Selector descendente --------------->
+  <div class="quote">
+    <span>This is the test</span>
+    <p>"CSS es como el ajedrez. Aprendes los conceptos básicos en un día y pasas toda la vida intentando dominarlo."</p>
+    <div>
+      <p>dddddddd</p>
+    </div>
+  </div>
+  <div>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates ipsa non nemo...</p>
+  </div>
+
+  <!------------ Selector descendente directo --------------->
+  <div class="quote2">
+    <span>This is the test</span>
+    <p>"CSS es como el ajedrez. Aprendes los conceptos básicos en un día y pasas toda la vida intentando dominarlo."</p>
+    <div>
+      <p>dddddddd</p>
+    </div>
+  </div>
+
+  <!------------ Selector combinado --------------->
+  <div class="quote3">
+    <span>This is the test</span>
+    <p>"CSS es como el ajedrez. Aprendes los conceptos básicos en un día y pasas toda la vida intentando dominarlo."</p>
+    <div>
+      <p>dddddddd</p>
+      <p class="highlight">dddddddddd</p>
+    </div>
+  </div>
+
+  <!------------ Selector atributo --------------->
+  <div class="quote4">
+    <button>hola</button>
+    <button type="submit">hola 2</button>
+  </div>
+</body>
+
+<!--
+🎯 Instrucciones de práctica:
+1. Override por especificidad: en .quote el <p> superior rojo, el <p> dentro del div naranja.
+2. Direct child vs. descendant: en .quote aplica verde solo al hijo directo <p>.
+3. Combinación multinivel: en .quote2, azul solo al <p> dentro del div.
+4. Refinar selector combinado: cambia tipografía de .quote3 > div > p.highlight a monoespaciada.
+5. Prioridad por orden: todos los <p> de .quote3 en gris, excepto el .highlight que se queda aqua.
+6. Aislar descendientes profundos: subrayado solo al <p> dentro del div en .quote.
+7. Agrupación de selectores: misma fuente a todos los <p> de .quote y al <p> directo de .quote2.
+8. Atributos exactos: en .quote4 el botón submit con fondo negro y texto blanco.
+9. Atributos — presencia: cualquier botón con atributo type tiene letter-spacing.
+10. Cadena más específica: en .quote3 el <p> directo bajo el <span> debe ser marrón aunque otras reglas lo sobrescriban.
+-->
+</html>

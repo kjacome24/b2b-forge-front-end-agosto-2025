@@ -1,35 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        }
-        h1 {
-            text-decoration: underline;
-        }
-        p {
-            text-decoration: underline;
-        }
-        .purple{
-            background-color: blue;
-        }
-        #yellow{
-            background-color: yellow;
-            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-        }
+      /* Selector universal: aplica a todos los elementos */
+      * {
+        margin: 0; /* Quita márgenes por defecto */
+        padding: 0; /* Quita rellenos por defecto */
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif; /* Fuente por defecto */
+      }
+
+      /* Todos los títulos <h1> estarán subrayados */
+      h1 {
+        text-decoration: underline;
+      }
+
+      /* Todos los párrafos <p> estarán subrayados */
+      p {
+        text-decoration: underline;
+      }
+
+      /* Clase .purple → fondo azul */
+      .purple {
+        background-color: purple;
+      }
+
+      /* ID #yellow → fondo amarillo y fuente distinta */
+      #yellow {
+        background-color: yellow;
+        font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+      }
     </style>
-</head>
-<body>
+  </head>
+  <body>
+    <!-- <h1> → se aplica la regla de h1 (subrayado) -->
     <h1>This is the main title</h1>
-    <p class="purple">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Amet excepturi dignissimos quae aperiam exercitationem id? Sed nulla a quos sunt laudantium, iste voluptatibus libero molestiae aut esse unde corporis asperiores minus alias ex odio quod optio tenetur nostrum. Obcaecati nulla atque ipsum est quod harum expedita repudiandae nemo recusandae tempore, repellat placeat dicta odit maiores ipsa pariatur. Eligendi quae ullam hic tenetur ex harum nulla. Labore minima placeat architecto odio consequatur tempora numquam rerum consequuntur quidem, corrupti ipsum exercitationem voluptas enim accusantium fugit soluta vitae, alias repudiandae blanditiis. Quae, illum enim quaerat natus culpa pariatur quasi in fugit accusantium consequatur est necessitatibus unde temporibus dolorum provident distinctio illo officia. Quidem corrupti obcaecati aspernatur eligendi accusamus amet, excepturi minus porro voluptatum, odit voluptas error nisi odio maiores doloremque sit molestias nobis earum enim dolorem ducimus totam nihil? Ducimus et iste corporis magni quaerat, aut dolor sed perferendis, at est odio laborum assumenda. Voluptate nisi tenetur hic quos voluptas praesentium in! Velit veniam molestias vel quasi esse recusandae nisi, unde reiciendis perferendis beatae laborum eius non aperiam autem deserunt hic voluptatem quam quae mollitia libero. Accusantium vel sint quos eum maxime cum alias mollitia quia vero voluptas tempore, distinctio nihil praesentium non earum. Est amet itaque possimus labore aperiam! Modi maiores reiciendis, impedit doloremque ad ipsam illo sequi, itaque recusandae, qui eius.</p>
-    <p class="purple">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Architecto accusamus error necessitatibus quidem corporis impedit tempora est ab sit itaque.</p>
-    <p id="yellow" class="purple">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum quam cumque vel voluptate doloribus blanditiis qui aut incidunt voluptas quidem, neque unde voluptatem fugiat soluta dignissimos doloremque non quia asperiores?</p>
+    <!-- Párrafo con clase purple → fondo azul + subrayado (por regla de p) -->
+    <p class="purple">
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Amet excepturi
+      dignissimos quae aperiam exercitationem id? Sed nulla a quos sunt
+      laudantium, iste voluptatibus libero molestiae aut esse unde corporis
+      asperiores minus alias ex odio quod optio tenetur nostrum. Obcaecati nulla
+      atque ipsum est quod harum expedita repudiandae nemo recusandae tempore,
+      repellat placeat dicta odit maiores ipsa pariatur. Eligendi quae ullam hic
+      tenetur ex harum nulla. Labore minima placeat architecto odio consequatur
+      tempora numquam rerum consequuntur quidem, corrupti ipsum exercitationem
+      voluptas enim accusantium fugit soluta vitae, alias repudiandae
+      blanditiis. Quae, illum enim quaerat natus culpa pariatur quasi in fugit
+      accusantium consequatur est necessitatibus unde temporibus dolorum
+      provident distinctio illo officia. Quidem corrupti obcaecati aspernatur
+      eligendi accusamus amet, excepturi minus porro voluptatum, odit voluptas
+      error nisi odio maiores doloremque sit molestias nobis earum enim dolorem
+      ducimus totam nihil? Ducimus et iste corporis magni quaerat, aut dolor sed
+      perferendis, at est odio laborum assumenda. Voluptate nisi tenetur hic
+      quos voluptas praesentium in! Velit veniam molestias vel quasi esse
+      recusandae nisi, unde reiciendis perferendis beatae laborum eius non
+      aperiam autem deserunt hic voluptatem quam quae mollitia libero.
+      Accusantium vel sint quos eum maxime cum alias mollitia quia vero voluptas
+      tempore, distinctio nihil praesentium non earum. Est amet itaque possimus
+      labore aperiam! Modi maiores reiciendis, impedit doloremque ad ipsam illo
+      sequi, itaque recusandae, qui eius.
+    </p>
+    <!-- Otro párrafo con clase purple → mismo estilo: fondo azul + subrayado -->
+    <p class="purple">
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Architecto
+      accusamus error necessitatibus quidem corporis impedit tempora est ab sit
+      itaque.
+    </p>
+    <!-- Párrafo con clase purple + id yellow -->
+    <!-- El id #yellow sobrescribe la clase .purple → fondo amarillo + fuente distinta -->
+    <!-- También mantiene el subrayado por la regla de p -->
+    <p id="yellow" class="purple">
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum quam
+      cumque vel voluptate doloribus blanditiis qui aut incidunt voluptas
+      quidem, neque unde voluptatem fugiat soluta dignissimos doloremque non
+      quia asperiores?
+    </p>
+    <!-- Párrafo con id yellow2 -->
+    <!-- No existe regla CSS para este id, por lo tanto solo aplica la regla general de p (subrayado) -->
     <p id="yellow2">ddd</p>
-</body>
+  </body>
 </html>

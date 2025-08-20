@@ -5,15 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
+        /*Descendent selector*/
         .quote1 p{
             color: red;
         }
+        /*Direct descendent selector*/
         .quote2 > p{
             color: purple;
         }
+        /*Combined selector*/
         div div p.highlight {
             background-color: yellow;
         }
+        /*Attribute selectors*/
         button[type="submit"]{
             background-color: aqua;
         }

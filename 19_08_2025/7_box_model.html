@@ -3,21 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Box model</title>
     <style>
-        div{
-            width: 300px;
-            height: 200px;
-            background-color: pink;
-            margin: 40px;
-            padding: 30px;
-            border: 20px solid;
+        /* Estilos aplicados al <div> */
+        div {
+            width: 300px;               /* Ancho del contenido (content box) */
+            height: 200px;              /* Alto del contenido */
+            background-color: pink;     /* Color de fondo del área de contenido */
+            margin: 40px;               /* Espacio exterior (separa el div de otros elementos) */
+            padding: 30px;              /* Espacio interior (entre el borde y el contenido) */
+            border: 20px solid;         /* Borde sólido de 20px alrededor del div */
         }
     </style>
 </head>
 <body>
+    <!-- Este <div> muestra claramente el Box Model:
+         - Área de contenido (texto <p>)
+         - Padding (30px)
+         - Borde (20px)
+         - Margen (40px alrededor del div) -->
     <div>
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima modi voluptatem, ad accusamus illo temporibus dolorum eaque, asperiores numquam vero id. Qui blanditiis exercitationem at, amet quasi alias beatae ut.</p>
+        <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+            Minima modi voluptatem, ad accusamus illo temporibus dolorum eaque, 
+            asperiores numquam vero id. Qui blanditiis exercitationem at, 
+            amet quasi alias beatae ut.
+        </p>
     </div>
 </body>
 </html>

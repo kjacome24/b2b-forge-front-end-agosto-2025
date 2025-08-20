@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Text properties</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -11,27 +11,33 @@
       rel="stylesheet"
     />
     <style>
+      /* Selector universal: aplica la fuente por defecto a todos los elementos */
       * {
         font-family: "Edu NSW ACT Cursive", cursive;
       }
+
+      /* Estilos para el título principal */
       h1 {
-        text-align: center;
-        text-decoration:underline;
-        font-style: italic;
-        
-
-
+        text-align: center; /* Centra el texto */
+        text-decoration: underline; /* Subrayado */
+        font-style: italic; /* Texto en cursiva */
+        text-decoration-style: wavy;
       }
+
+      /* Estilos para los párrafos */
       p {
-        text-align: center;
-        text-decoration: line-through;
-        font-style: italic;
-        font-weight: 600;
+        text-align: center; /* Centra el texto */
+        text-decoration: line-through; /* Línea de tachado */
+        font-style: italic; /* Texto en cursiva */
+        font-weight: 600; /* Negrita intermedia (semi-bold) */
       }
     </style>
   </head>
   <body>
+    <!-- Título h1 → centrado, subrayado y en cursiva -->
     <h1>This page is to check the text properties</h1>
+
+    <!-- Párrafo → centrado, tachado, cursiva y con peso 600 -->
     <p>
       Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ducimus, ex
       expedita tempore dolore voluptates, inventore eum eaque amet accusamus
@@ -40,6 +46,8 @@
       iusto possimus alias quasi nisi. Aperiam, doloribus! Laborum aliquam aut
       expedita voluptatibus ad.
     </p>
+
+    <!-- Etiqueta label → solo hereda la fuente global, sin estilos propios -->
     <label>Send</label>
   </body>
 </html>

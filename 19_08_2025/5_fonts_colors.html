@@ -3,31 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- En las 3 lineas de abajo se importan las fuentes desde Google Fonts.
+         En este caso: Edu NSW ACT Cursive, Playwrite MX Guides y Roboto -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Cursive:wght@400..700&family=Playwrite+MX+Guides&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <title>Document</title>
+
+    <title>Fonts & Colors</title>
     <style>
-        h1{
-            color: pink;
-            color: #833e55;
-            color: rgb(0, 128, 255);
-            color: rgba(138, 29, 29, 0.5);
-            color: #ffcc00;
+        h1 {
+            /* Diferentes formas de asignar color en CSS.
+               La última línea que se escribe es la que tiene efecto final. */
+
+            color: pink;               /* Nombre de color */
+            color: #833e55;            /* Código hexadecimal */
+            color: rgb(0, 128, 255);   /* Valores RGB (rojo, verde, azul) */
+            color: rgba(138, 29, 29, 0.5); /* RGBA (incluye transparencia con "alpha") */
+            color: #ffcc00;            /* Este es el color final aplicado (hexadecimal) */
         }
-        div{
+
+        div {
+            /* Se asigna un color de fondo con valor hexadecimal */
             background-color: #ffcc00;
             width: 5rem;
             height: 5rem;
         }
+
+        /* Selector universal (*): aplica a todos los elementos de la página */
         * {
+            /* Fuente por defecto será la importada desde Google Fonts */
             font-family: "Edu NSW ACT Cursive", cursive;
         }
     </style>
 </head>
 <body>
-    <h1>This page is to show how to use colrs and fonts</h1>
-    <div></div>
+    <!-- Este h1 mostrará el color #ffcc00 porque es la última regla aplicada -->
+    <h1>This page is to show how to use colors and fonts</h1>
 
+    <!-- Div cuadrado de 5rem x 5rem con fondo amarillo (#ffcc00) -->
+    <div></div>
 </body>
 </html>

@@ -1,20 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="./styles.css">
+    <!-- Vinculación a un archivo CSS externo llamado styles.css -->
+    <link rel="stylesheet" href="./styles.css" />
     <style>
-        h2{
-            color: purple;
-            background-color: aqua;
-        }
+      /* Estilos internos en CSS: afectan a todos los <h2> de la página */
+      h2 {
+        color: purple; /* Color de texto púrpura */
+        background-color: aqua; /* Fondo color aqua */
+      }
     </style>
-</head>
-<body>
-    <h1 style="color: red; background-color:black">This is the page to check the intro for css</h1>
+  </head>
+  <body>
+    <!-- Estilos en línea: se aplican solo a este <h1> -->
+    <!-- Tiene más prioridad que los estilos internos o externos -->
+    <h1 style="color: red; background-color: black">
+      This is the page to check the intro for css
+    </h1>
+    <!-- Este <h2> recibe los estilos definidos en el bloque <style> (púrpura + aqua) -->
     <h2>This is the second tags for testing</h2>
+    <!-- Este <h3> no tiene estilos propios en línea ni internos,
+         pero podría recibirlos desde el archivo externo styles.css -->
     <h3>This is another test for css with the file</h3>
-</body>
+  </body>
 </html>

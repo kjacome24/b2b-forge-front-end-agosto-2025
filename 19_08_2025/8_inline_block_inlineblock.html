@@ -1,49 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <style>
-        * {
-            text-align: center;
-        }
-        #container1 {
-            width: 200px;
-            height: 80px;
-            background-color: #20b1aa;
-            
-        }
-        #container2 {
-            width: 200px;
-            height: 80px;
-            background-color: #ff00fe;
-        }
-        #container3{
-            width: 200px;
-            height: 100px;
-            background-color: #010080;
-        }
-        #container3, #container2, #container1 {
-            display: inline-block;
-            vertical-align: bottom;
-        }
+      /* Selector universal → centra todo el texto dentro de la página */
+      * {
+        text-align: center;
+      }
 
+      /* Primer contenedor con ancho fijo y color de fondo turquesa */
+      #container1 {
+        width: 200px;
+        height: 80px;
+        background-color: #20b1aa;
+      }
 
+      /* Segundo contenedor con mismo ancho y alto que el primero, fondo fucsia */
+      #container2 {
+        width: 200px;
+        height: 80px;
+        background-color: #ff00fe;
+      }
+
+      /* Tercer contenedor un poco más alto (100px), fondo azul oscuro */
+      #container3 {
+        width: 200px;
+        height: 100px;
+        background-color: #010080;
+      }
+
+      /* Los tres contenedores comparten estas propiedades */
+      #container3,
+      #container2,
+      #container1 {
+        display: inline-block; /* Se muestran en línea como cajas una al lado de la otra */
+        vertical-align: bottom; /* Alinea las cajas por la parte inferior */
+      }
     </style>
-</head>
-<body>
+  </head>
+  <body>
+    <!-- Título -->
     <h3>box model</h3>
 
-        <div id="container1">
-            <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, sint.</P>
-        </div>
-        <div id="container2">
-            <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, sint.</P>
-        </div>
-        <div id="container3">
-            <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, sint.</P>
-        </div>
-    
-</body>
+    <!-- Contenedor 1 → caja turquesa -->
+    <div id="container1">
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, sint.
+      </p>
+    </div>
+
+    <!-- Contenedor 2 → caja fucsia -->
+    <div id="container2">
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, sint.
+      </p>
+    </div>
+
+    <!-- Contenedor 3 → caja azul más alta, alineada en la base con las otras -->
+    <div id="container3">
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, sint.
+      </p>
+    </div>
+  </body>
 </html>
