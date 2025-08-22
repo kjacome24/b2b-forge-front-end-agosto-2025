@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /*Descendent selector*/
+      div div div label {
+        color: red;
+      }
+      /*Descendent direct selector*/
+      .main .main2 > p {
+        color: blue;
+      }
+      #other_main p {
+        color: aqua;
+      }
+      /*Combined selector*/
+      #other_main div p.extra {
+        color: purple;
+      }
+      #other_main div form.form2{
+        color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main">
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque,
+        tenetur.
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque,
+        tenetur.
+      </p>
+      <span>Google</span>
+      <label>this is a label</label>
+      <div class="main2">
+        <label>this is another label</label>
+        <p>this is another one xxx</p>
+        <div>
+          <p>another P</p>
+          <label for="">this is the extra one</label>
+        </div>
+      </div>
+    </div>
+    <div id="other_main">
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi, nulla!
+      </p>
+      <div>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero quam
+          aperiam, cumque aspernatur id voluptatem molestiae dicta
+          necessitatibus repellat fugiat, est, soluta obcaecati quod. Laudantium
+          quibusdam sit reprehenderit hic perspiciatis.
+        </p>
+        <p class="extra">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus
+          molestiae blanditiis nemo sit itaque asperiores ipsum voluptatibus
+          expedita earum dolorum nostrum, illo velit est atque, minus voluptate
+          nam, quam autem.
+          <form>
+            <input>
+            <label>this is the firs label</label>
+          </form>
+          <form class="form2">
+            <input>
+            <label>this is the firs label</label>
+          </form>
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
