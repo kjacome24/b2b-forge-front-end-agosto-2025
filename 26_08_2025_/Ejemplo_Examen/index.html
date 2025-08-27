@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Belt exam Juego Dojo WF2021 (Spanish)">
+    <meta name="author" content="Kevin J">
+    <title>Belt Exam</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Preahvihear&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <header> <!--From here you will have the header with the title, selection of currency and counter of purchases-->
+        <div class="nava"></div>
+        <div class="navb">
+            <div class="navb1">
+                <h1>Gaming<span style="color: #6700ab;">Dojo</span></h1>
+            </div>
+            <div class="navb2">
+                <div class="navb2a">
+                        <select name="currency" id="currency">
+                            <option value="Euro">Euro €</option>
+                            <option value="Dollar">Dollar $</option>
+                            <option value="Yen">Yen ¥</option>
+                            <option value="Franc">Franc ₣</option>
+                            <option value="Rupee">Rupee ₹</option>
+                            <option value="Dinar">Dinar د. ك</option>
+                            <option value="Dirham">Dirham د. إ</option>
+                        </select>
+                </div> 
+                <div class="navb2b">
+                    <img src="images/cart-light.png" alt="cart-light">
+                    <h2 id="numshoppingcart">0</h2>
+                </div> 
+                <div class="navb2c">
+                    <img src="images/search-light.png" alt="search-light">
+                </div> 
+            </div>
+        </div>
+    </header><!--End of the heade-->
+    
+    <Main> <!--From here you will have the main that includes the banners and option to buy-->
+        <div class="main0">
+            <h3>Highlights</h3>
+        </div>    
+        <div class="main1">
+            <div class="main1a">
+                <img id="lefclick" onclick="lefclick()" src="images/chevron-left.png" alt="chevron-left">
+            </div>
+            <div class="main1b">
+                <img id="mainbanner" src="images/stonepunk.png" alt="">
+            </div>
+            <div class="main1c">
+                <img id="rightclick" onclick="rightclick()"  src="images/chevron-left.png" alt="chevron-left">
+            </div>
+        </div>
+        <div class="main2">
+            <div class="main2a">
+                <button id="btns1"></button>
+                <button id="btns2"></button>
+                <button id="btns3"></button>
+                <button id="btns4"></button>
+            </div>
+        </div>
+        <div class="main3">
+            <div class="main3a">
+                <div class="main3a1">
+                    <img id="cafeneko" src="images/cafe-neko.png" alt="cafe-neko">
+                </div>
+                <div class="main3a2">
+                    <h3>Cafe Neko: Gold edition</h3>
+                    <img class="icons" src="images/windows.png" alt="windows">
+                    <img class="icons" src="images/apple.png" alt="apple">
+                </div>
+                <div class="main3a3">
+                    
+                    <div class="main3a3a">
+                        <button class="descountbtn">-20%</button>
+                    </div>
+                    <div class="main3a3b">
+                        <p><span style="text-decoration: line-through; color:#999999;">€14.98</span></p>
+                        <p><span style="font-weight: bold;">€10.49</span></p>
+                    </div>
+                    <div class="main3a3c">
+                        <button class="buybtn" onclick="shoppingcar()">Buy</button>
+                    </div>
+                </div>
+            </div>
+            <div class="main3b">
+                <div class="main3b1">
+                    <img id="pixelninjas" src="images/pixel-ninjas-2.png" alt="pixel-ninjas-2">
+                </div>
+                <div class="main3b2">
+                    <h3>Pixel Ninjas 2</h3>
+                    <img class="icons" src="images/windows.png" alt="windows">
+                    <img class="icons" src="images/apple.png" alt="apple">
+                </div>
+                <div class="main3b3">
+                    <div class="main3b3a">
+                        <button class="descountbtn">-10%</button>
+                    </div>
+                    <div class="main3b3b">
+                        <p><span style="text-decoration: line-through; color:#999999;">€8.19</span></p>
+                        <p><span style="font-weight: bold;">€7.39</span></p>
+                    </div>
+                    <div class="main3b3c">
+                        <button class="buybtn" onclick="shoppingcar()">Buy</button>
+                    </div>
+                </div>
+            </div>
+            <div class="main3c">
+                <div class="main3c1">
+                    <img id="stonepunk" src="images/stonepunk.png" alt="stonepunk">
+                </div>
+                <div class="main3c2">
+                    <h3>Stonepunk 10000 BCE</h3>
+                    <img class="icons" src="images/windows.png" alt="windows">
+                    <img class="icons" src="images/apple.png" alt="apple">
+                    <img id="linuxicon" onclick="linuxicon()" class="icons" src="images/linux.png" alt="linux">
+                </div>
+                <div class="main3c3">
+                    
+                    <div class="main3c3a">
+                        <button class="descountbtn">NEW</button>
+                    </div>
+                    <div class="main3c3b">
+                        <p><span style="text-decoration: line-through; color:#fff;">None</span></p>
+                        <p><span style="font-weight: bold;">€19.99</span></p>
+                    </div>
+                    <div class="main3c3c">
+                        <button class="buybtn" onclick="shoppingcar()">Buy</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </Main> <!--End of the main-->
+
+</body>
+
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card user</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            margin: 1rem;
+        }
+        #user_card{
+            width: 50rem;
+            height: 30rem;
+            box-shadow: 0rem 0.2rem 0.2rem #8888;
+            border-radius: 1rem;
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+        }
+        #user_card_1{
+            background-color: #00bcd5;
+            flex: 1;
+            position: relative;
+        }
+        #user_card_2{
+            flex: 3;
+            padding-top: 8rem;
+            padding-left: 2rem;
+            padding-right: 2rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+        }
+        #user_card_1 > img {
+            width: 10rem;
+            border-radius: 50%;
+            border: 0.2rem solid white;
+            position: absolute;
+            top: 50%;
+            left: 5%;
+        }
+        #editar_perfil{
+            height: 2rem;
+            border-radius: 0.2rem;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+    <div id="user_card">
+        <div id="user_card_1">
+            <img src="./img/FOTO.png" alt="kevin">
+        </div>
+        <div id="user_card_2">
+            <h1>Kevin Jacome Duque</h1>
+            <h4>Bogota, Colombia</h4>
+            <p>Desarrollador Full Stack Python & MERN</p>
+            <P>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Temporibus exercitationem voluptatum amet pariatur dolor commodi expedita sed animi aliquam! Ab voluptatibus eos atque debitis beatae velit laborum culpa ipsam accusamus?</P>
+            <div>
+            <button id="editar_perfil">
+                Editar perfil
+            </button>
+
+            </div>
+        </div>
+    </div>
+</body>
+</html>

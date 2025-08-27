@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pagina de Perfil</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+      }
+      header {
+        flex: 1;
+        background-color: #333333;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+      }
+      main {
+        flex: 5;
+        display: flex;
+        margin: 1rem;;
+      }
+      #main_1 {
+        flex: 2;
+      }
+      #main_2 {
+        background-color: aqua;
+        flex: 1;
+      }
+
+      #user_card {
+        height: 30rem;
+        box-shadow: 0rem 0.2rem 0.2rem #8888;
+        border-radius: 1rem;
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+      }
+      #user_card_1 {
+        background-color: #00bcd5;
+        flex: 1;
+        position: relative;
+      }
+      #user_card_2 {
+        flex: 3;
+        padding-top: 8rem;
+        padding-left: 2rem;
+        padding-right: 2rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+      }
+      #user_card_1 > img {
+        width: 10rem;
+        border-radius: 50%;
+        border: 0.2rem solid white;
+        position: absolute;
+        top: 50%;
+        left: 5%;
+      }
+      #editar_perfil {
+        height: 2rem;
+        border-radius: 0.2rem;
+        border: none;
+      }
+      .navbar{
+        color: white;
+        padding: 1rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    .logo{
+        flex: 1;
+    }
+    .nav-links{
+        flex: 1;
+        display: flex;
+        justify-content: space-evenly;
+        list-style: none;
+    }
+    a {
+        text-decoration: none;
+        color: white;
+        
+    }
+    </style>
+  </head>
+  <body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <h1>Perfil</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Mi perfil </a></li>
+                <li><a href="#">Encontrar concexiones</a></li>
+            </ul>
+            <button>Cerrar sesion</button>
+        </nav>
+    </header>
+    <main>
+      <div id="main_1">
+        <div id="user_card">
+          <div id="user_card_1">
+            <img src="./img/FOTO.png" alt="kevin" />
+          </div>
+          <div id="user_card_2">
+            <h1>Kevin Jacome Duque</h1>
+            <h4>Bogota, Colombia</h4>
+            <p>Desarrollador Full Stack Python & MERN</p>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Temporibus exercitationem voluptatum amet pariatur dolor commodi
+              expedita sed animi aliquam! Ab voluptatibus eos atque debitis
+              beatae velit laborum culpa ipsam accusamus?
+            </p>
+            <div>
+              <button id="editar_perfil">Editar perfil</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="main_2"></div>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,385 @@
+/* CSS reset */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Preahvihear', sans-serif;
+    box-sizing: border-box;}
+
+/*General rules for tags*/  
+
+h1 {
+    font-size: 300%;
+    color: #fff;
+}
+
+select{
+    border: 2px black solid;
+    background-image: linear-gradient(to right, #ffff 0%, #FFFF 70%, black 70%,#FFFF 72%, #fff 100%) ;
+    height: 100%;
+
+}
+
+/*Header css*/
+
+header{
+    display: flex;
+    flex-direction: column;
+    height: 100px;
+}
+
+.nava{
+    flex: 1;
+    background-color: #6700ab ;
+
+}
+
+.navb{
+    flex:7;
+    background-color: black;
+    padding-left: 15%;
+    padding-right: 15%;
+    display: flex;
+    justify-content: space-between;}
+
+.navb1{
+    width: 30%;
+    display: flex;
+    align-items: center;
+
+}
+
+.navb2{
+    width: 30%;  
+    text-align: center;  
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navb2a{
+    flex: 1;
+    height: 50%;
+}
+
+.navb2b{
+    flex: 1;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.navb2c{
+    flex: 1;
+}
+
+/*Main css*/
+
+main{
+    height: 820px;
+    padding-top: 1%;
+    padding-left: 15%;
+    padding-right: 15%;
+    display: flex;
+    flex-direction: column;
+    background-color: #eeeeee;
+}
+
+/*Main section 0 with text highlights*/
+.main0{
+    flex: 0.3;
+}
+
+/*Main section 1 with the arrows and the banner*/
+.main1{
+    flex: 2;
+    display: flex;
+}
+
+.main1a{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.main1b{
+    flex: 10;
+    display: flex;
+}
+.main1c{
+    flex: 1;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+    rotate: 180deg;
+}
+
+
+/*Main section 2 for the 4 buttons*/
+.main2{
+    flex: 0.3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main2a{
+    width: 30%;
+    height: 50%;
+    display: flex;
+    justify-content: space-between;
+    display: flex; 
+    align-items: center;
+
+}
+
+/*Main section 3 for the 3 columns with small banners and extra info*/
+
+.main3{
+    flex: 1;
+    display: flex;
+}
+
+
+/*Section for the cafe neko gold edition*/
+.main3a{
+    flex: 1;
+    margin-right: 5%;
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+}
+
+/*first container*/
+.main3a1{
+    flex: 3;
+    display: flex;
+    overflow: hidden;
+    width: fit-content;
+}
+
+/*Second container*/
+.main3a2{
+    flex: 2;
+    padding: 5%;
+}
+.main3a3{
+    flex: 2;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+/*Third container*/
+.main3a3a{
+    flex: 1;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    overflow: hidden;
+    padding: 2% ;
+}
+/*Sub-containers of Third container*/        
+.main3a3b{
+    flex: 0.5;
+    height: 100%;
+    display: inline;
+    padding-top: 5%;
+    margin: 0 auto;
+}
+
+.main3a3c{    flex: 1;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    overflow: hidden;
+    padding: 2% ;
+    justify-content: end;}
+
+/*Section for the Pixel Ninjas 2*/
+
+.main3b{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+}
+
+/*first container*/
+.main3b1{
+    flex: 3;
+    display: flex;
+    overflow: hidden;
+    width: fit-content;
+
+}
+
+/*Second container*/
+.main3b2{
+    flex: 2;
+    padding: 5%;
+
+}
+
+
+/*Third container*/
+.main3b3{
+    flex: 2;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+/*Sub-containers of Third container*/    
+.main3b3a{
+
+    flex: 1;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    overflow: hidden;
+    padding: 2% ;
+}
+.main3b3b{
+    flex: 0.5;
+    height: 100%;
+    display: inline;
+    padding-top: 5%;
+    margin: 0 auto;
+
+}
+.main3b3c{
+    flex: 1;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    overflow: hidden;
+    padding: 2% ;
+    justify-content: end;
+}
+
+/*Section for Stonepunk*/
+
+.main3c{
+    flex: 1;
+    margin-left: 5%;
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    
+}
+
+/*first container*/
+.main3c1{
+    flex: 3;
+    display: flex;
+    overflow: hidden;
+    width: fit-content;
+}
+
+/*Second container*/
+.main3c2{
+    flex: 2;
+    padding: 5%;
+}
+
+/*Third container*/
+.main3c3{
+    flex: 2;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+/*Sub-containers of Third container*/    
+.main3c3a{
+    flex: 1;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    overflow: hidden;
+    padding: 2% ;
+}
+.main3c3b{
+    flex: 0.5;
+    height: 100%;
+    display: inline;
+    padding-top: 5%;
+    margin: 0 auto;
+
+}
+.main3c3c{
+    flex: 1;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    overflow: hidden;
+    padding: 2% ;
+    justify-content: end;
+}
+
+
+
+/*Specific rules*/
+
+#numshoppingcart{
+    text-decoration: underline;
+    color: #fff;
+}
+
+
+#mainbanner {
+    height: 100%;
+    width: 100%;}/*Frocing main banner to be the same size that conatiner*/
+
+#cafeneko, #pixelninjas, #stonepunk {
+
+    width: 100%;
+} /*making sure that pictures are fitting the 100% of its container and no more than that*/
+
+.icons{
+    height: 40px;
+    width: 40px;
+} /*We are forcing the icons to be smaller just to make sure the page looks more alike*/
+
+#btns1,#btns3,#btns4{
+    background-color: #999999;
+    height: 50%;
+    width: 15%;
+    border: none;  
+} /*This is for the style of the buttons below the banner*/
+
+#btns2{   
+    height: 50%;
+    background-color: #9900ff ;
+    width: 15%;
+    border: none;} /*This is for the style of the buttons below the banner*/
+
+.descountbtn{
+    background-color: #9900ff;
+    height: 70%;
+    width: 70%;
+    text-align: center;
+    font-size: 100%;
+    color: #fff;
+}   /*This is for the style of the buttons of discounts*/
+
+.buybtn{
+    background-color: #6ba950;
+    height: 70%;
+    width: 70%;
+    text-align: center;
+    font-size: 100%;
+    color: #fff;
+    box-shadow: 1PX 1PX 0PX black; 
+}    /*This is for the style of the buy buttons*/
