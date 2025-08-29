@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        main {
+            flex: 5;
+
+            display: flex;
+        }
+        #main_i {
+
+            flex: 2;
+            display: flex;
+            flex-direction: column;
+        }
+
+        #main_i_1 {
+            background-color: red;
+            flex: 3;
+        }
+        #main_i_2 {
+            background-color: blue;
+            flex: 1;
+        }
+
+
+        #main_d {
+            background-color: pink;
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+        }
+
+        #main_d_1 {
+            background-color: palegreen;
+            flex: 1;
+        }
+        #main_d_2 {
+            background-color: yellow;
+            flex: 3;
+        }
+
+        header{
+            flex: 1;
+            background-color: purple;
+            display: flex;
+        }
+        #header1 {
+            flex: 1;
+
+            display: flex;
+            margin-left: 1rem;
+            align-items: center;
+        }
+        #header2 {
+            flex: 1;
+            background-color: burlywood;
+            display: flex;
+
+        }
+        #header2 > ul {
+            flex: 1;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            list-style: none;
+        }
+        a {
+            text-decoration: none;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div id="header1">
+            <h1>Perfil</h1>
+        </div>
+        <div id="header2">
+            <ul>
+                <li><a href="#">Inicio</a> </li>
+                <li><a href="#">Mi perfil</a> </li>
+                <li><a href="#">Encontrar conexion</a> </li>
+            </ul>
+        </div>
+    </header>
+    <main>
+        <div id="main_i">
+            <div id="main_i_1">
+
+            </div>
+            <div id="main_i_2">
+
+            </div>
+        </div>
+        <div id="main_d">
+            <div id="main_d_1"></div>
+            <div id="main_d_2"></div>
+        </div>
+    </main>
+</body>
+</html>
