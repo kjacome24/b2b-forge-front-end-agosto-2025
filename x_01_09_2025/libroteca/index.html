@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Libroteca</title>
+    <link rel="stylesheet" href="./style.css" />
+    <script src="./script.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <div id="header_1">
+        <h1>Libroteca</h1>
+        <img src="./img/logo.png" alt="logo libro" />
+      </div>
+      <div id="header_2">
+        <div>
+          <button id="inicio_de_sesion" onclick="inicio_de_sesion()">Inicio de sesion</button>
+          <button id="registro">Registro</button>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div id="main_1">
+        <div id="main_1_a">
+          <img src="./img/libro.png" alt="libro icon" />
+          <h3>Elije tu libro</h3>
+        </div>
+        <div id="main_1_b">
+          <img src="./img/check.png" alt="check icon" />
+          <h3>Revisa tu disponibilidad</h3>
+        </div>
+        <div id="main_1_c">
+          <img src="./img/separalo.png" alt="separalo icon" />
+          <h3>Elije tu libro</h3>
+        </div>
+        <div id="main_1_d">
+          <img src="./img/shipping.png" alt="shipping icon" />
+          <h3>Elije tu libro</h3>
+        </div>
+      </div>
+      <div id="main_2">
+        <a href="#" onclick="genero(this)">Ficcion</a>
+        <a href="#" onclick="genero(this)">Historico</a>
+        <a href="#" onclick="genero(this)">Tecnologia</a>
+        <a href="#" onclick="genero(this)">Autoayuda</a>
+        <a href="#" onclick="genero(this)">Poesia</a>
+      </div>
+      <div id="main_3">
+        <h2 id="genero">Todos los libros</h2>
+      </div>
+      <div id="main_4">
+        <div>
+          <img src="./img/cien.jpg" alt="cien" />
+          <p>Cien anos de soledad</p>
+          <strong>Gabriel Garcia Marquez</strong>
+          <button class="rentar" onclick="rentar(this)">Rentar</button>
+        </div>
+        <div>
+          <img src="./img/rayuela.jpg" alt="rayuela" />
+          <p>Rayuela</p>
+          <strong>Julio Cortazar</strong>
+          <button class="rentar" onclick="rentar(this)">Rentar</button>
+        </div>
+        <div>
+          <img src="./img/travesuras.jpg" alt="travesuras" />
+          <p>Travessuras de la nina mala</p>
+          <strong>Mario Vargas Llosa</strong>
+          <button class="rentar" onclick="rentar(this)">Rentar</button>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <span>Todos los derechos reservados. Libroteca</span>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        height: 100vh;
+        display: flex;
+        background-color: pink;
+        flex-direction: column;
+      }
+      header {
+        background-color: aqua;
+        flex: 1;
+        display: flex;
+      }
+      main {
+        flex: 6;
+      }
+
+      .nav-links {
+        flex: 1;
+
+        display: flex;
+        justify-content: space-evenly;
+      }
+      .logo {
+        flex: 1;
+        background-color: red;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .nav {
+        flex: 1;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+      }
+
+      .navbar{
+        flex: 1;
+      }
+      ul {
+        list-style: none;
+      }
+      a {
+        text-decoration: none;
+
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+
+        <div class="logo">
+          <a href="#">Videojuegos</a>
+        </div>
+        <div class="nav">
+          <nav class="navbar">
+                <ul class="nav-links">
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Juegos</a></li>
+                <li><a href="#">Noticias</a></li>
+                <li><a href="#">Reseñas</a></li>
+                <li><a href="#">Foro</a></li>
+                <li><a href="#">Contacto</a></li>
+              </ul>
+          </nav>
+        </div>
+      </nav>
+    </header>
+    <main></main>
+  </body>
+</html>
