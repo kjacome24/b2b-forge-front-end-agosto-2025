@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./script.js"></script>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+        body{
+            height: 10rem;
+            width: 50rem;
+            background-color: pink;
+            display: flex;
+        }
+
+        body > div {
+            width: 5rem;
+            height: 5rem;
+            background-color: aqua;
+            margin: 1rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    <div onclick="tabla(this)" data-info="Hydrogen, Atomic mass:1.0078 u">
+        H
+    </div>
+    <div onclick="tabla(this)" data-info="Lithium , Atomic mass:6.9410 u">
+        Li
+    </div>
+    <div onclick="tabla(this)" data-info="Beryllium , Atomic mass:9.0122 u">
+        Be
+    </div>
+</body>
+</html>

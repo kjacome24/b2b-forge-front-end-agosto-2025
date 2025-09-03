@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Onclick Core</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="./script.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Petlopedia</h1>
+        <div id="searchbar">
+            <input type="search" placeholder="Buscar Mascotas"/>
+        </div>
+        <div id="iniciar_sesion">
+            <button id="loginButton" onclick="cerrar_sesion(this)">Iniciar Sesion</button>
+        </div>
+    </header>
+    <main>
+        <div id="main_i">
+            <div>
+                <h2>Gato Atigrado</h2>
+                <i>sustantivo</i>
+                <p>Plural: Gatos atigrados</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, nostrum? Doloribus vero quidem consectetur! Doloremque libero suscipit mo.</p>
+                <div>
+                    <button class="likeButton" onclick="me_gusta(this)">0 me gusta</button>
+                </div>
+            </div>
+            <div>
+                <h2>Golden Retriever</h2>
+                <i>sustantivo</i>
+                <p>Plural: Golden retrievers</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, nostrum? Doloribus vero quidem consectetur! Doloremque libero suscipit mo.</p>
+                <div>
+                    <button class="likeButton" onclick="me_gusta2(this)">0 me gusta</button>
+                </div>
+            </div>
+        </div>
+        <div id="main_d">
+            <div>
+                <p>Petlopedia estadefinida por TI</p>
+                <div>
+                    <button id="addDefintion" onclick="elminar(this)">Agregar definicion</button>
+                </div>
+            </div>
+        </div>
+
+    </main>
+    <footer></footer>
+</body>
+</html>

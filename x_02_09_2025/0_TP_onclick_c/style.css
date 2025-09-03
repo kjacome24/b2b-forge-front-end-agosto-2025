@@ -1,0 +1,112 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+}
+
+header{
+    background-color: #d3d3d3;
+    flex: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+
+footer{
+    flex: 1;
+}
+
+
+header > h1 {
+    flex: 1;
+}
+
+
+#searchbar{
+    flex: 4;
+    display: flex;
+}
+
+#searchbar > input {
+    flex: 1;
+}
+
+#iniciar_sesion{
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+}
+
+#loginButton{
+    background-color: #1f90ff;
+    padding: 0.2rem;
+    color: white;
+}
+
+
+main {
+    flex: 5;
+    display: flex;
+}
+
+#main_i{
+
+    flex: 4;
+    display: flex;
+    flex-direction: column;
+}
+#main_d{
+
+    flex: 2;
+    display: flex;
+}
+
+
+#main_i > div {
+    border: 0.1rem solid black;
+    flex: 1;
+    padding: 1rem;
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+} 
+
+.likeButton {
+    padding: 0.2rem;
+    box-shadow: 0.2rem 0.2rem 0.2rem;
+    background-color: #feffcd;
+}
+
+#main_d > div {
+    flex: 1;
+    border: 0.1rem solid black;
+    margin: 1rem;
+    padding: 1rem;
+    max-height: 5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+#addDefintion{
+    box-shadow: 0.2rem 0.2rem 0.2rem black;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    background-color: #008100;
+    color: white;
+}
+
+
+.likeButton:hover{
+    background-color: yellow;
+}
