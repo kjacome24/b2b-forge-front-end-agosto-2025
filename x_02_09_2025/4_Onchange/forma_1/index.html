@@ -11,12 +11,15 @@
             height: 10rem;
             background-color: aqua;
         }
+        select {
+                background-image: linear-gradient(to right, #ffff 0%, #FFFF 70%, black 70%,#FFFF 72%, #fff 100%) ;
+        }
     </style>
 </head>
 <body>
     <div>
         <p class="leyenda">Todas la opciones</p>
-        <select onchange="select_filtro(this)">
+        <select class="custom-select" onchange="select_filtro(this)">
             <option>Rock</option>
             <option>Reggae</option>
             <option>pop</option>
