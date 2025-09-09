@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlorMania</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" >
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin >
+    <link
+      href="https://fonts.googleapis.com/css2?family=Preahvihear&display=swap"
+      rel="stylesheet"
+    >
+    <link rel="stylesheet" href="./style.css">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" > -->
+    <script src="./script.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="header_sub1">
+            <h1><span>Flor</span>mania</h1>
+        </div>
+        <div class="header_sub2">
+            <a href="#" onmouseover="buquets(this)" onmouseout="flores(this)">Envia Flores</a>
+            <a href="#">Nosotros</a>
+            <button onclick="iniciar_sesion()">Iniciar Sesion</button>
+        </div>
+    </header>
+    <nav>
+        <a href="#">Girasoles</a>
+        <a href="#">Rosas</a>
+        <a href="#">Claveles</a>
+        <a href="#">Tulipanes</a>
+        <a href="#">Lirios</a>
+        <a href="#">Orquideas</a>
+        <a href="#">Margaritas</a>
+    </nav>
+    <main>
+        <section id="main_section_1">
+            <h2>Flor del Mes</h2>
+            <img id="flor_del_mes" src="./img/flor-del-mes.jpg" alt="Flore del mes">
+        </section>
+        <section id="main_section_2">
+            <div id="main_section_2_a">
+                <p>Mostrando <strong>50 resultados</strong> </p>
+                <a href="#">Ver mas flores</a>
+            </div>
+            <div id="main_section_2_b">
+                <div class="cards">
+                    <img src="./img/arreglo-tulipanes.jpg" alt="tulipanes">
+                    <div class="product_details">
+                        <div>
+                            <p>Ramo de Rosas</p>
+                            <p>$40.00</p>
+                        </div>
+                    <button class="comprar" onclick="comprar(this)">Comprar</button>
+                    </div>
+                </div>
+                <div class="cards">
+                    <img src="./img/arreglo-tulipanes.jpg" alt="tulipanes">
+                    <div class="product_details">
+                        <div>
+                            <p>Ramo de Rosas</p>
+                            <p>$40.00</p>
+                        </div>
+                        <div>
+                    <button class="comprar" onclick="comprar(this)">Comprar</button>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="cards">
+                    <img src="./img/arreglo-tulipanes.jpg" alt="tulipanes">
+                    <div class="product_details">
+                        <div>
+                            <p>Ramo de Rosas</p>
+                            <p> <strong>$40.00</strong></p>
+                        </div>
+                    <button class="comprar" onclick="comprar(this)">Comprar</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer></footer>
+</body>
+</html>
