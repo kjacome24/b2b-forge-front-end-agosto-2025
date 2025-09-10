@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="./script.js" defer></script>
+  </head>
+  <body>
+    <button class="btn">On</button>
+    <button class="btn">On</button>
+    <button class="btn">On</button>
+    <script>
+      const buttons = document.querySelectorAll("button");
+        /*let turn_on_off = (input) => {
+            if(input.innerText=="On"){
+                input.innerText = "Off"
+            } else {
+                input.innerText = "On"
+            }
+
+        }*/
+
+
+      buttons.forEach( element => {
+        element.addEventListener("click",
+        function(){
+            if(element.innerText=="On"){
+                element.innerText = "Off"
+            } else {
+                element.innerText = "On"
+            }
+        }
+        /*turn_on_off(element)*/
+        )
+      }
+        
+);
+    </script>
+  </body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <style>
+        div{
+            width: 10rem;
+            height: 10rem;
+            background-color: aqua;
+        }
+    </style>
+</head>
+<body>
+    <button class="btn">On</button>
+    <button class="btn">On</button>
+    <button class="btn">On</button>
+    <hr>
+    <div id="box"></div>
+    <script>
+        $(".btn").click(
+            function(){
+                /*$(this).text("Off");*/
+                if($(this).text()=="On"){
+                    $(this).text("Off")  
+                } else {
+                    $(this).text("On")
+                }
+
+            }
+        )
+        $("#box").hover(
+            function(){
+                $(this).css("background-color","green");
+            },function(){
+                $(this).css("background-color","aqua");
+            }
+        )
+    </script>
+</body>
+</html>

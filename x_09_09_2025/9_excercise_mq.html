@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin:0;
+            padding: 0;
+        }
+        body{
+            height: 100vh;
+            background-color: aqua;
+            display: flex;
+            flex-direction: column;
+        }
+        header{
+            flex: 1;
+            background-color: white;
+            display: flex;
+
+        }
+        nav{
+            flex: 1;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+        main{
+            flex: 5;
+        }
+
+        @media(max-width: 860px){
+            nav{
+                flex-direction: column;
+            }
+            main{
+                flex: 1;
+                background-color: yellow;
+            }
+            #home{
+                display: none;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <a id="home" href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+        </nav>
+    </header>
+    <main></main>
+</body>
+</html>
