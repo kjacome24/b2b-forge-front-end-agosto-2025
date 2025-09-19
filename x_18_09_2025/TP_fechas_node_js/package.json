@@ -1,0 +1,17 @@
+{
+  "name": "fechas_node_js",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "type": "module",
+  "dependencies": {
+    "chalk": "^5.6.2",
+    "dayjs": "^1.11.18"
+  }
+}
