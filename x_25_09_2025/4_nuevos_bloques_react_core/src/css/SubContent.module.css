@@ -1,0 +1,7 @@
+.subContent{
+        height: 200px;
+        width: 210px;
+        background-color: mediumblue;
+        display: inline-block; /**/
+        margin: 10px; /**/
+}
