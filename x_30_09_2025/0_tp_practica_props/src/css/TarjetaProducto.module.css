@@ -1,0 +1,14 @@
+.tarjetoProducto{
+    margin: 1rem;
+    padding: 1rem;
+    width: 20rem;
+    text-align: left;
+}
+
+.enStock{
+    color: green;
+}
+
+.agotado{
+    color: red;
+}
