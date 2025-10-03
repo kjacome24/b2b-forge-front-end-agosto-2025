@@ -1,0 +1,21 @@
+.tarjetaProducto{
+    flex: 1;
+    margin: 1rem;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.enStock{
+    color: green;
+}
+
+.agotado{
+    color: red;
+}
+
+
+.precio{
+    color: #cccccc;
+}
