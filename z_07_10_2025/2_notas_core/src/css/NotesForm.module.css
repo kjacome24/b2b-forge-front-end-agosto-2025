@@ -1,0 +1,12 @@
+.cardNotes{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+
+.cardNotes > div {
+    margin: 1rem !important;
+}
+
+
