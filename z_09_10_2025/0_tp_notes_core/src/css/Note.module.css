@@ -1,0 +1,16 @@
+.high{
+    color: red;
+}
+.medium{
+    color: rgb(72, 72, 5);
+}
+
+.low{
+    color: green;
+}
+
+.noteCard{
+    display: flex !important;
+    justify-content: space-between;
+    
+}
