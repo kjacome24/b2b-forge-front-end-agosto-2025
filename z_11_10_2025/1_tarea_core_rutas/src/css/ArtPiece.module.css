@@ -1,0 +1,10 @@
+.img{
+    width: 30rem;
+    height: 30rem;
+    margin: 1rem;
+    border-radius: 1rem;
+}
+
+.btns{
+    margin: 1rem !important;
+}
