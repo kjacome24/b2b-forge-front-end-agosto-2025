@@ -2,10 +2,11 @@ import { useState } from 'react'
 import {Routes, Route, Link, NavLink} from 'react-router-dom'
 import './App.css'
 import SongsApi from './components/SongsApi'
-import ListaCanciones from './components/ListaCanciones'
-import OneSong from './components/OneSong'
+import ListaCanciones from './views/ListaCanciones'
+import OneSong from './views/OneSong'
 import NotFound from './components/NotFound'
-import FormSongs from './components/FormSongs'
+import FormSongs from './views/FormSongs'
+import UpdateSongsForm from './views/UpdateSongsForm'
 
 function App() {
   const [listaSongs, setListasSongs] = useState([])
@@ -20,6 +21,7 @@ function App() {
         <Route path='/canciones' element={< ListaCanciones listaSongs={listaSongs}/>}/>
         <Route path='/canciones/:id' element={<OneSong listaSongs={listaSongs}  setListasSongs={setListasSongs}/> }/>
         <Route path='/canciones/new' element={< FormSongs listaSongs={listaSongs}  setListasSongs={setListasSongs}/>}/>
+        <Route path='/canciones/update/:id' element={< UpdateSongsForm listaSongs={listaSongs} setListasSongs={setListasSongs} />}/>
         <Route path='*' element={< NotFound/>}/>
       </Routes>
 

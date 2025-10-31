@@ -77,7 +77,15 @@ const songsController = {
             }
             res.status(201).json(oneUpdated)
         }catch(e){
-            return res.status(400).json(e)
+
+            const messages = {};
+            if(e.name === "ValidationError"){
+                Object.keys(e.errors).forEach(key => {
+                    messages[key] = e.errors[key].message;
+                })
+                
+            }
+            return res.status(400).json({errors : {...messages}})
         }
     }
 }

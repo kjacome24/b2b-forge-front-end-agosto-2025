@@ -1,45 +1,51 @@
 import axios from "axios";
-import { useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { useEffect, useState } from "react"
+import { useNavigate, useParams } from "react-router-dom"
 
-const FormSongs = ({listaSongs, setListasSongs})=>{
-    const [data, setData] = useState({
-        title : "",
-        artist : "",
-        yearOfRealease : 0,
-        genre : ""
-    })
-    const [errors, setErrors] = useState(
-        {
 
-        }
-    )
-
+const UpdateSongsForm = ({listaSongs, setListasSongs})=> {
+    const emptyDefault = {title: "", artist: "", yearOfRealease: "", genre: ""}
     const navigate = useNavigate();
+    const {id} = useParams();
+
+    const index = listaSongs.findIndex((song)=> song._id==id)
+
+    const [data, setData] = useState({...emptyDefault})
+    const [errors, setErrors] = useState({})
 
     const updadatState = (e)=>{
         setData({...data, [e.target.name]: e.target.value})
     }
 
-
-    const addSong = (e) =>{
+    const updateSong = (e)=> {
         e.preventDefault();
-        const URL = 'http://localhost:8000/api/canciones'
-        axios.post(URL,data).then(
+
+
+        const URL = `http://localhost:8000/api/canciones/${id}`
+        // xxxxx Espacio para validations xxxx
+        axios.put(URL,data).then(
             response => {
-                setListasSongs([...listaSongs, response.data])
-                navigate('/canciones')
+                const copyListaSong = [...listaSongs]
+                copyListaSong[index] = response.data;
+                setListasSongs(copyListaSong)
+
+                navigate(`/canciones/${id}`)
+                
             }
-
         ).catch(
-            e=> 
-                setErrors(e.response.data.errors)
-
+            e=> setErrors(e.response.data.errors)
         )
+
     }
 
+
+    useEffect(()=>{
+        const newArray = listaSongs.find((song)=> song._id==id)
+        setData(newArray ? {...newArray} : {...emptyDefault})
+    },[listaSongs,id])
+
     return(
-        <form onSubmit={(e) =>addSong(e) }>
+        <form onSubmit={e=> updateSong(e)}>
             <div>
                 <label htmlFor="title" >Titulo:</label>
                 <input type="text" name="title" id="title" value={data.title} onChange={(e)=>{ updadatState(e)}} />
@@ -65,4 +71,5 @@ const FormSongs = ({listaSongs, setListasSongs})=>{
     )
 }
 
-export default FormSongs;
+
+export default UpdateSongsForm;

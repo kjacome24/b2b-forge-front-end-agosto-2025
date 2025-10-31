@@ -1,7 +1,7 @@
 import { useNavigate, useParams } from "react-router-dom";
 import axios from "axios";
 import { useEffect, useState } from "react";
-import NotFound from "./NotFound";
+import NotFound from "../components/NotFound";
 
 
 const OneSong = ({listaSongs, setListasSongs})=> {
@@ -39,6 +39,10 @@ const OneSong = ({listaSongs, setListasSongs})=> {
         )
     }
 
+    const updateSong = ()=>{
+        navigate(`/canciones/update/${id}`)
+    }
+
     return(
         <div>
                 <h2>Detalle de cancion</h2>
@@ -46,7 +50,7 @@ const OneSong = ({listaSongs, setListasSongs})=> {
                 <p>Artist: {person.artist}</p>
                 <p>Lanzamiento: {person.yearOfRealease}</p>
                 <p>Genero: {person.genre}</p>
-                <button onClick={deleteOne}>Eliminar</button>
+                <button onClick={deleteOne}>Eliminar</button> | <button onClick={updateSong}>Editar</button>
         </div>
     )
 }
