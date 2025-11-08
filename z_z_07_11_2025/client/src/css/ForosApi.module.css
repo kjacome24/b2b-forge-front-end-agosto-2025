@@ -1,0 +1,22 @@
+.table_main{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+table{
+    flex: 1;
+    border: 1px solid white
+}
+
+tr{
+    display: flex;
+}
+
+.title{
+    flex: 2;
+}
+
+.extra{
+    flex: 1;
+}

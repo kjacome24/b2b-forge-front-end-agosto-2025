@@ -44,7 +44,7 @@ function App() {
         <Route path='/' element={<div><p>This is the home</p></div>}/>
         <Route path='/canciones' element={< ListaCanciones listaSongs={listaSongs} />}/>
         <Route path='/canciones/:id' element={<OneSong listaSongs={listaSongs}  setListasSongs={setListasSongs} logOut={logOut}/> }/>
-        <Route path='/canciones/new' element={< FormSongs listaSongs={listaSongs}  setListasSongs={setListasSongs} logOut={logOut}/>}/>
+        <Route path='/canciones/new' element={< FormSongs listaSongs={listaSongs}  setListasSongs={setListasSongs} logOut={logOut} login={login}/>}/>
         <Route path='/canciones/update/:id' element={< UpdateSongsForm listaSongs={listaSongs} setListasSongs={setListasSongs} logOut={logOut}/>}/>
         < Route path='/login' element={< Login setLogin={setLogin} />}/>
         <Route path='/register' element={ < Register setLogin={setLogin} />}/>

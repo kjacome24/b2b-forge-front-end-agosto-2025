@@ -1,0 +1,16 @@
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+h1{
+    flex: 1;
+    font-size: 3rem
+}
+
+.options{
+    flex: 1;
+    display: flex;
+    justify-content: space-around;
+}
