@@ -1,0 +1,14 @@
+.card{
+    border: 2px solid white;
+    margin: 0.1rem;
+}
+
+.titles{
+    font-weight: bolder;
+    font-style: italic;
+}
+
+.delete{
+    background-color: red;
+    color: white;
+}

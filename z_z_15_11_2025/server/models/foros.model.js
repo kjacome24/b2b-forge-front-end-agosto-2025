@@ -19,8 +19,9 @@ const forosSchema = mongoose.Schema(
             minlength : [5, "The category should have at least 10 characters"]
         },
         author : {
-            type : String,
-            required : [true, "You have to add the author"]
+            type : mongoose.Schema.ObjectId,
+            ref: "users", //nombre del modelo de usuario a referenciar
+            required : [true,"Ypu have to add an author"]
         }
 
 
